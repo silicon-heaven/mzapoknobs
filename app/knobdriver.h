@@ -14,6 +14,7 @@ public:
 private:
 	QFrame *m_knobFrame;
 	QString m_shvPath;
+	int m_refreshDataRequestId = 0;
 };
 
 #endif // KNOBDRIVER_H

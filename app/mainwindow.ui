@@ -14,47 +14,240 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QGroupBox" name="grpA">
-      <property name="title">
-       <string>A</string>
+   <layout class="QVBoxLayout" name="verticalLayout_7">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">font: 28pt;</string>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QFrame" name="frameAR">
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <widget class="QSpinBox" name="spinbox">
-            <property name="styleSheet">
-             <string notr="true">background: red</string>
-            </property>
-            <property name="buttonSymbols">
-             <enum>QAbstractSpinBox::NoButtons</enum>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QSlider" name="slider">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="tickPosition">
-             <enum>QSlider::TicksBothSides</enum>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-      </layout>
+      <property name="text">
+       <string>MZAPO Knobs</string>
+      </property>
      </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Minimal SHV visualization application &lt;a href=&quot;https://github.com/silicon-heaven/mzapoknobs&quot;&gt;https://github.com/silicon-heaven/mzapoknobs&lt;/a&gt; developed as CTU Prague MZAPO device control example.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QGroupBox" name="grpA">
+        <property name="title">
+         <string>Board A</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QFrame" name="frameAR">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QSpinBox" name="spinbox">
+              <property name="styleSheet">
+               <string notr="true">background: red;color:white</string>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="slider">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::TicksBothSides</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frameAG">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QSpinBox" name="spinbox_2">
+              <property name="styleSheet">
+               <string notr="true">background: green; color:white;</string>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="slider_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::TicksBothSides</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frameAB">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QSpinBox" name="spinbox_3">
+              <property name="styleSheet">
+               <string notr="true">background: blue; color:white;</string>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="slider_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::TicksBothSides</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="grpA_2">
+        <property name="title">
+         <string>Board B</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QFrame" name="frameBR">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QSpinBox" name="spinbox_4">
+              <property name="styleSheet">
+               <string notr="true">background: red; color:white;</string>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="slider_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::TicksBothSides</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frameBG">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QSpinBox" name="spinbox_5">
+              <property name="styleSheet">
+               <string notr="true">background: green; color:white;</string>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="slider_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::TicksBothSides</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frameBB">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QSpinBox" name="spinbox_6">
+              <property name="styleSheet">
+               <string notr="true">background: blue; color:white;</string>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="slider_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="tickPosition">
+               <enum>QSlider::TicksBothSides</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>

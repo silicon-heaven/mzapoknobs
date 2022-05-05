@@ -18,7 +18,7 @@ public:
 	AppCliOptions* cliOptions() {return m_cliOptions;}
 
 	shv::iotqt::rpc::ClientConnection *rpcConnection() { return m_rpcConnection; }
-	//void sendRpcMessage(const shv::chainpack::RpcMessage &msg);
+	//Q_SIGNAL void rpcMessageReceived(const shv::chainpack::RpcMessage &msg);
 private:
 	void onBrokerConnectedChanged(bool is_connected);
 	void onRpcMessageReceived(const shv::chainpack::RpcMessage &msg);
